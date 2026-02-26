@@ -11,23 +11,23 @@
         <nav class="header-nav">
             <ul>
                 <li class="logo"><a href="#home">JamboConnect</a></li>
-                <li><a href="#services">Our APIs</a></li>
+                <li><a href="#apis">Our APIs</a></li>
                 <li><a href="#how-it-works">How it works</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faqs">FAQs</a></li>
                 <li><a href="#">Developers Portal</a></li>
             </ul>
         </nav>
 
         <div>
             <a href="#" class="header-cta-btn header-cta-btn-outline">Log in</a>
-            <a href="signin.html" class="header-cta-btn">Get Started</a>
+            <a href="#" class="header-cta-btn">Get Started</a>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero container">
+        <section id="home" class="hero container section">
             <div class="hero-left">
                 <p class="hero-intro">Reach customers anywhere, instantly.</p>
                 <h1 class="hero-heading">SMS, WhatsApp & Email — One API, Millions Served.</h1>
@@ -49,7 +49,7 @@
             </div>
         </section>
 
-        <section class="container section" id="services">
+        <section id="apis" class="container section">
             <h2 class="section-heading">Our Communication APIs</h2>
             <p class="section-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad nulla veritatis ducimus tempore numquam ullam atque, reprehenderit voluptas quod sequi quasi molestias beatae vel quidem repudiandae ab nisi natus!</p>
 
@@ -174,7 +174,7 @@
 
                 <div class="pricing-card card">
                     <p class="plan-name">Enterprise</p>
-                    <p class="pricing-amount">Ksh 5500<span>/month</span></p>
+                    <p class="pricing-amount">KES 5500<span>/month</span></p>
                     <p class="plan-description">Built for established companies that need scale, control, and support.</p>
 
                     <ul>
@@ -191,6 +191,69 @@
                 </div>
             </div>
         </section>
+
+        <section id="testimonials" class="container section">
+            <h2 class="section-heading">What Our Users Say</h2>
+            <p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <div class="reviews-grid">
+                <div class="review-card card">
+                    <p class="review-text card-txt">"This product completely transformed our workflow!"</p>
+                    <div class="reviewer-info">
+                        <img class="reviewer-avatar" src="images/users/user1.jfif" alt="Dennis Njoroge">
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">Dennis Njoroge</p>
+                            <p class="reviewer-role">CEO, BrainWorks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card card">
+                    <p class="review-text card-txt">"Easy to use and very intuitive. Highly recommended."</p>
+                    <div class="reviewer-info">
+                        <img class="reviewer-avatar" src="images/users/user2.jfif" alt="John Doe">
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">John Doe</p>
+                            <p class="reviewer-role">CEO, StartHub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card card">
+                    <p class="review-text card-txt">"I highly recommend this."</p>
+                    <div class="reviewer-info">
+                        <img class="reviewer-avatar" src="images/users/user3.jfif" alt="John Doe">
+                        <div class="reviewer-details">
+                            <p class="reviewer-name">Mercy Ngina</p>
+                            <p class="reviewer-role">CTO, Bright Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs" class="container section">
+            <h2 class="section-heading faqs-title">Frequently Asked Questions</h2>
+            <p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+            <div class="faqs-grid">
+                <div onclick="console.log('FAQ clicked')" class="faq-card card">
+                    Question One
+                </div>
+                <div class="faq-card card">
+                    Question Two
+                </div>
+                <div class="faq-card card">
+                    Question Three
+                </div>
+                <div class="faq-card card">
+                    Question Four
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            this is footer
+        </footer>
     </main>
 </body>
 </html>
