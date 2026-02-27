@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JamboConnect</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="header container">
@@ -236,24 +237,176 @@
             <p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 
             <div class="faqs-grid">
-                <div onclick="console.log('FAQ clicked')" class="faq-card card">
-                    Question One
+                <div class="faq-card card card-txt">
+                    <p class="question-name">What channels does the API support?</p>
+                    <p class="hidden card-txt">
+                        Our API supports bulk messaging across three major communication channels:
+                        <ul class="hidden card-txt hidden-li">
+                            <li>SMS – Global bulk text messaging with high deliverability</li>
+                            <li>WhatsApp – Official WhatsApp Business messaging for notifications and conversations</li>
+                            <li>Email – High-volume transactional and marketing email delivery</li>
+                        </ul>
+                    </p>
                 </div>
                 <div class="faq-card card">
-                    Question Two
+                    <p class="question-name">Can I send bulk messages to thousands of users at once?</p>
+                    <p class="hidden card-txt">
+                        Yes. The API is built for high-volume messaging and supports sending to thousands (or even millions) of recipients in a single request using batch endpoints.
+                    </p>
                 </div>
                 <div class="faq-card card">
-                    Question Three
+                    <p class="question-name">Does the API support message personalization?</p>
+                    <p class="hidden card-txt">
+                        Absolutely. You can personalize messages using dynamic variables such as:
+                        <ul class="hidden card-txt hidden-li">
+                            <li>First name</li>
+                            <li>Order number</li>
+                            <li>Appointment time</li>
+                            <li>Custom fields from your database</li>
+                        </ul>
+                        <p class="hidden card-txt">For example:</p>
+                        <code class="hidden card-txt">
+                            Hi {{first_name}}, your order #{{order_id}} has been shipped.
+                        </code>
+                    </p>
                 </div>
                 <div class="faq-card card">
-                    Question Four
+                    <p class="question-name">How do I track delivery and engagement?</p>
+                    <p class="hidden card-txt">
+                        The API provides real-time status tracking and webhooks for:
+                        <ul class="hidden card-txt hidden-li">
+                            <li>Sent</li>
+                            <li>Delivered</li>
+                            <li>Read (WhatsApp & Email)</li>
+                            <li>Opened (Email)</li>
+                            <li>Clicked (Email links)</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <footer>
-            this is footer
+        <section class="section container">
+            <h2 class="section-heading">Ready to Start Sending Messages at Scale?</h2>
+
+            <p class="section-intro cta-text">
+                Join businesses across Africa using JamboConnect to power SMS, WhatsApp, 
+                and Email communication from one powerful API.
+                Get started in minutes — no complicated setup.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary cta-btn">
+                    Get Your API Key
+                </a>
+                <a href="#" class="btn btn-outline cta-btn-outline">
+                    Talk to Sales
+                </a>
+
+                <p class="cta-subtext">
+                     No setup fees • Fast onboarding • Developer-friendly docs
+                </p>
+            </div>
+
+        </section>
+
+        <footer class="footer container section">
+            <div class="container footer-container">
+
+                <!-- Top Footer Grid -->
+                <div class="footer-grid">
+
+                    <!-- Brand Column -->
+                    <div class="footer-brand">
+                        <h3 class="footer-logo">JamboConnect</h3>
+                        <p class="footer-description">
+                            Powerful SMS, WhatsApp, and Email APIs built for modern businesses.
+                            Reliable infrastructure. Scalable messaging. Developer-first.
+                        </p>
+                    </div>
+
+                    <!-- Product -->
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#apis">SMS API</a></li>
+                            <li><a href="#apis">WhatsApp API</a></li>
+                            <li><a href="#apis">Email API</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Developers -->
+                    <div class="footer-column">
+                        <h4>Developers</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Status Page</a></li>
+                            <li><a href="#">System Status</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#testimonials">Customers</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#faqs">Support</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Divider -->
+                <div class="footer-divider"></div>
+
+                <!-- Bottom Footer -->
+                <div class="footer-bottom">
+                    <p>© 2026 JamboConnect. All rights reserved.</p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Security</a>
+                    </div>
+                </div>
+
+            </div>
         </footer>
     </main>
+
+    <script>
+        const cards = document.querySelectorAll('.faq-card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+
+                cards.forEach(c => c.classList.remove('active'));
+
+                card.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
