@@ -159,6 +159,51 @@ main {
   padding-top: 100px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* tablet & smaller */
+@media (max-width: 768px) {
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header-nav.active ul {
+        display: flex;
+    }
+
+    .header-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        order: 1;
+        align-self: flex-end;
+    }
+}
+
 /* ============================= */
 /* 5. HERO SECTION */
 /* ============================= */
@@ -545,5 +590,156 @@ main {
   .footer-legal a {
     margin-left: 0;
     margin-right: 15px;
+  }
+}
+
+/* ============================= */
+/* HERO SECTION RESPONSIVE */
+/* ============================= */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 20px;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .hero-right {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+}
+
+/* ============================= */
+/* SERVICES GRID RESPONSIVE */
+/* ============================= */
+@media (max-width: 992px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* ============================= */
+/* PRICING GRID RESPONSIVE */
+/* ============================= */
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* HOW IT WORKS GRID RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* CTA SECTION RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-btn {
+    margin-right: 0;
+  }
+}
+
+/* ============================= */
+/* HEADER NAVIGATION ENHANCEMENTS */
+/* ============================= */
+@media (max-width: 480px) {
+  .header-nav ul {
+    gap: 10px;
+  }
+
+  .header-cta-btn {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+}
+
+/* ============================= */
+/* CARD & TEXT ADJUSTMENTS */
+/* ============================= */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 100px 20px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-intro {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================= */
+/* REVIEWS GRID RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ============================= */
+/* FAQ CARD RESPONSIVE */
+/* ============================= */
+@media (max-width: 600px) {
+  .faq-card {
+    padding: 15px 10px;
+  }
+
+  .question-name {
+    font-size: 0.95rem;
+  }
+
+  .card-txt {
+    font-size: 0.9rem;
   }
 }
